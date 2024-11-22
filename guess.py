@@ -2,6 +2,7 @@ import streamlit as st
 import random
 st.title("My Portfolio")
 st.header("About Me")
+user_message= st.text_area("Share your achievements")
 st.sidebar.title("Navigation")
 menu = st.sidebar.selectbox("Choose a page", ["Home",  "Portfolio"])
 
