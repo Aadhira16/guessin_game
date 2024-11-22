@@ -1,12 +1,9 @@
 import streamlit as st
 import random
-def display_portfolio():
-    st.title("My Portfolio")
-    st.header("About Me")
-
-
-    st.sidebar.title("Navigation")
-    menu = st.sidebar.selectbox("Choose a page", ["Home",  "Portfolio"])
+st.title("My Portfolio")
+st.header("About Me")
+st.sidebar.title("Navigation")
+menu = st.sidebar.selectbox("Choose a page", ["Home",  "Portfolio"])
 
 def get_secret_number():
     return random.randint(1, 100)
@@ -101,7 +98,7 @@ def main():
             st.session_state.over = True
             placeholder.empty()
             hint_text.empty()
- display_portfolio()
+
 
 
 if __name__ == '__main__':
